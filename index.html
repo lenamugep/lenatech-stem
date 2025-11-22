@@ -1,73 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenatech STEM & Robotics Program</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background: #f5f7fa;
-            color: #333;
-        }
-        header {
-            background: #0b3d91;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        .container {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #0b3d91;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background: #eee;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenatech Robotics & STEM Academy</title>
+  <meta name="description" content="Lenatech Robotics & STEM Academy - Empowering young innovators in Kenya with robotics, coding, AI and STEM education.">
+  <meta property="og:title" content="Lenatech Robotics & STEM Academy">
+  <meta property="og:description" content="Empowering young innovators in Kenya with practical robotics, coding, AI and STEM training.">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#0b3d91;
+      --accent:#ffb703;
+      --muted:#6b7280;
+      --bg:#f5f7fa;
+      --card:#ffffff;
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{background:linear-gradient(90deg,var(--blue),#0a5fb8);color:white;padding:36px 0;border-bottom-left-radius:22px;border-bottom-right-radius:22px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;background:white;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--blue);font-weight:800}
+    .navlinks{display:flex;gap:14px;align-items:center}
+    .navlinks a{color:rgba(255,255,255,.95);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding-top:22px}
+    .hero h1{font-size:28px;margin:0 0 12px;color:white}
+    .hero p{color:rgba(255,255,255,.92);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);border:none;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn-outline{background:transparent;border:2px solid rgba(255,255,255,.18);color:white;padding:8px 14px;border-radius:10px}.card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,40,.08)}
+.programs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.programs .item{padding:18px;border-radius:12px}
+h2{color:var(--blue);margin:0 0 8px}
+
+main{padding:28px 0}
+.grid-2{display:grid;grid-template-columns:1fr 360px;gap:24px}
+ul{padding-left:18px}
+footer{background:#0f172a;color:white;padding:24px 0;margin-top:30px;border-top-left-radius:12px}
+.footer-grid{display:flex;justify-content:space-between;gap:16px;align-items:center}
+
+/* responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .grid-2{grid-template-columns:1fr}
+  .programs{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:520px){
+  .programs{grid-template-columns:1fr}
+  .navlinks{display:none}
+  .logo{width:44px;height:44px}
+  header{padding:20px}
+}
+
+  </style>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">L</div>
+          <div>
+            <div style="font-weight:800">Lenatech Robotics & STEM Academy</div>
+            <small style="color:rgba(255,255,255,.85)">Under Lenatech Finance — Nairobi, Kenya</small>
+          </div>
+        </div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#mission">Mission</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav><div class="hero">
+    <div>
+      <h1>Practical Robotics, Coding & AI training for young Kenyan innovators</h1>
+      <p>We prepare youth for the future of work through hands-on STEM learning, beginner-friendly robotics projects, AI literacy, and leadership training. Join our programs or partner with us to expand access across underserved communities.</p>
+      <div class="cta">
+        <a class="btn" href="#programs">Join Our Programs</a>
+        <a class="btn-outline" href="#contact">Partner With Us</a>
+      </div>
 
-<header>
-    <h1>Lenatech STEM & Robotics Program</h1>
-    <p>Empowering Youth with Digital Skills, Coding, AI & Robotics</p>
-</header>
+      <div class="card" style="margin-top:18px">
+        <strong>Who we serve</strong>
+        <p style="margin:6px 0 0;color:var(--muted)">Youth aged 12–24, Form 4 leavers, college students and learners from rural or underrepresented communities.</p>
+      </div>
+    </div>
 
-<div class="container">
-    <h2>About Us</h2>
-    <p>
-        Lenatech STEM & Robotics Program is an initiative under Lenatech Finance, dedicated 
-        to expanding access to digital skills, coding, AI literacy, and introductory robotics 
-        education for young people in Kenya. Our mission is to empower youth—especially those 
-        from underserved communities—with the skills needed to participate in the future of 
-        work and technology-driven innovation.
-    </p>
+    <div>
+      <div class="card">
+        <h3 style="margin-top:0">Upcoming Cohort</h3>
+        <p style="color:var(--muted)">12-week beginner robotics & coding cohort — practical, project-based. Scholarships available for deserving learners.</p>
+        <hr style="border:none;border-top:1px solid #eef2ff;margin:12px 0">
+        <p style="margin:0"><strong>Start Date:</strong> To be announced</p>
+        <p style="margin:0"><strong>Location:</strong> Nairobi & community hubs</p>
+        <a class="btn" style="margin-top:12px;display:inline-block" href="#contact">Register Interest</a>
+      </div>
 
-    <h2>Programs We Offer</h2>
-    <ul>
-        <li>Computer Literacy & Digital Skills Training</li>
-        <li>Python Programming for Beginners</li>
-        <li>AI & Machine Learning Basics</li>
-        <li>STEM Clubs Support & Youth Leadership Training</li>
-        <li>Introduction to Robotics & Automation Concepts</li>
-    </ul>
-
-    <h2>Contact Us</h2>
-    <p>Email: <strong>lenamugep@gmail.com</strong></p>
-    <p>Location: Kenya</p>
+      <div class="card" style="margin-top:12px">
+        <h4 style="margin:0">Quick Links</h4>
+        <ul style="margin:10px 0 0;padding-left:18px;color:var(--muted)">
+          <li>Teaching curriculum</li>
+          <li>Teacher training</li>
+          <li>AI resources & workshops</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="footer">
-    © 2025 Lenatech Finance – STEM & Robotics Initiative
-</div>
+  </header>  <main class="container">
+    <section id="about" class="card">
+      <h2>About Us</h2>
+      <p>Lenatech Robotics & STEM Academy is an initiative under Lenatech Finance focused on expanding access to practical STEM education in Kenya. We run hands-on robotics and coding programs, AI literacy sessions, and capacity building for teachers and youth leaders. Our methods are project-based, affordable, and inclusive—designed to work in low-resource environments.</p>
+      <div class="grid-2" style="margin-top:18px">
+        <div>
+          <h3>Our Approach</h3>
+          <ul>
+            <li>Hands-on project learning using low-cost robotics kits and digital tools.</li>
+            <li>Mentor-led workshops and school STEM club support.</li>
+            <li>Teacher training so schools can sustain programs independently.</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h4 style="margin-top:0">Program Impact (target)</h4>
+          <p style="margin:0;color:var(--muted)">In our first year we aim to reach 500 learners across Nairobi and surrounding counties, train 50 teachers, and establish 20 school STEM clubs.</p>
+        </aside>
+      </div>
+    </section><section id="programs" style="margin-top:18px">
+  <h2>Programs & Services</h2>
+  <div class="programs">
+    <div class="item card">
+      <h3>Robotics & Coding Bootcamp</h3>
+      <p style="color:var(--muted)">12-week cohorts teaching block & Python coding, sensors, motors, and simple automation projects.</p>
+    </div>
+    <div class="item card">
+      <h3>STEM Clubs</h3>
+      <p style="color:var(--muted)">Setup and sustain STEM clubs in partner schools with curriculum guides and mentor training.</p>
+    </div>
+    <div class="item card">
+      <h3>AI Literacy Workshops</h3>
+      <p style="color:var(--muted)">Introductory AI concepts, ethics, and simple ML demonstrations using accessible tools.</p>
+    </div>
+  </div>
 
-</body>
+  <div style="margin-top:16px" class="card">
+    <h3>Teacher & Leader Training</h3>
+    <p style="color:var(--muted)">Short training sessions that enable teachers and youth leaders to run basic robotics and coding lessons without prior expertise.</p>
+  </div>
+</section>
+
+<section id="mission" style="margin-top:18px" class="card">
+  <h2>Mission & Vision</h2>
+  <p><strong>Mission:</strong> To empower young Africans with practical Robotics, AI and STEM skills that prepare them for future careers in technology and innovation.</p>
+  <p><strong>Vision:</strong> A future where every young person—regardless of background—has access to quality STEM education and the chance to build solutions for their communities.</p>
+</section>
+
+<section id="contact" style="margin-top:18px" class="card">
+  <h2>Contact Us</h2>
+  <p>If you would like to partner, donate kits, volunteer, or register learners, get in touch.</p>
+  <p><strong>Program Lead:</strong> Paul Lenamuge</p>
+  <p><strong>Email:</strong> <a href="mailto:lenamugep@gmail.com">lenamugep@gmail.com</a></p>
+  <p><strong>Website:</strong> <a href="https://lenamugep.github.io/lenatech-stem/">https://lenamugep.github.io/lenatech-stem/</a></p>
+  <p><strong>Location:</strong> Nairobi, Kenya</p>
+  <div style="margin-top:10px">
+    <a class="btn" href="mailto:lenamugep@gmail.com">Email Us</a>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Lenatech Robotics & STEM Academy</strong>
+        <div style="color:rgba(255,255,255,.8);font-size:14px">Under Lenatech Finance — Nairobi, Kenya</div>
+      </div>
+      <div style="text-align:right">
+        <div style="color:rgba(255,255,255,.9)">© 2025 Lenatech Robotics & STEM Academy</div>
+        <div style="color:rgba(255,255,255,.7);font-size:13px">Built by Paul Lenamuge</div>
+      </div>
+    </div>
+  </footer>  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      })
+    })
+  </script></body>
 </html>
